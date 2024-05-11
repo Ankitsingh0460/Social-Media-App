@@ -1,0 +1,10 @@
+.sideBar {
+  min-height: 600px;
+}
+.mainDiv {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
