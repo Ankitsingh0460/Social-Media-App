@@ -32,7 +32,7 @@ const Content = () => {
 
   return (
     <form className="create-post" onSubmit={handleSubmit}>
-      <div className="mb-3">
+      <div className="mb-3 " >
         <label htmlFor="userId" className="form-label">
           Enter your User Id here
         </label>
