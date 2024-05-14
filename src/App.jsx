@@ -7,9 +7,11 @@ import Content from './component/Content';
 import Postlist from './component/Postlist';
 import { useState } from 'react';
 import PostListProvider from './store/Post-list-store';
+import LoadingScreen from './component/LoadingScreen';
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home")
+
 
   return (
     <PostListProvider>
@@ -17,6 +19,7 @@ function App() {
         <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab}></Sidebar>
         <div className='content'>
           <Header></Header>
+
           {selectedTab === "Home" ? (<Postlist></Postlist>) : (<Content></Content>)}
           <Footer></Footer>
         </div>
